@@ -23,7 +23,7 @@ export function App() {
           <span className="space-y-2">
             <h3 className="font-bold text-gray-200">Data</h3>
             <Select>
-              <SelectTrigger className="w-[180px]">
+              <SelectTrigger className="w-full">
                 <SelectValue placeholder="Theme" />
               </SelectTrigger>
               <SelectContent>
