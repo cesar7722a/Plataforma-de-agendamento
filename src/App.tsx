@@ -1,10 +1,4 @@
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { DatePickerDemo } from "./components/date-picker-demo";
 
 export function App() {
   return (
@@ -19,20 +13,25 @@ export function App() {
             agendamento
           </h2>
         </div>
+
         <div className="space-y-8">
-          <span className="space-y-2">
-            <h3 className="font-bold text-gray-200">Data</h3>
-            <Select>
-              <SelectTrigger className="w-full">
-                <SelectValue placeholder="Theme" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="light">Light</SelectItem>
-                <SelectItem value="dark">Dark</SelectItem>
-                <SelectItem value="system">System</SelectItem>
-              </SelectContent>
-            </Select>
-          </span>
+          <div className="space-y-8">
+            <span className="space-y-2">
+              <h3 className="font-bold text-gray-200">Data</h3>
+              <DatePickerDemo />
+            </span>
+          </div>
+          <div>
+            <div className="space-y-8">
+              <span className="space-y-2">
+                <h3 className="font-bold text-gray-200">Horários</h3>
+                <div className="space-y-2">
+                  <h4 className="text-gray-300 text-sm ">Manhã</h4>
+                  <div>Array</div>
+                </div>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
       <div></div>
