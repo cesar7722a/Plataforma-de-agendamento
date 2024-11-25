@@ -25,9 +25,13 @@ export function App() {
             <div className="space-y-8">
               <span className="space-y-2">
                 <h3 className="font-bold text-gray-200">Horários</h3>
-                <div className="space-y-2">
+                <div className="space-y-3">
                   <h4 className="text-gray-300 text-sm ">Manhã</h4>
-                  <div>Array</div>
+                  <div>
+                    <span className="px-5 py-2.5 bg-gray-600 border border-gray-500 rounded-md hover:cursor-pointer  hover:bg-gray-500">
+                      9:00
+                    </span>
+                  </div>
                 </div>
               </span>
             </div>
