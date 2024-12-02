@@ -2,6 +2,8 @@ import { DatePickerDemo } from "./components/date-picker-demo";
 import { CardTimeManha } from "./components/card-time-manha";
 import { CardTimeTarde } from "./components/card-time-tarde";
 import { CardTimeNoite } from "./components/card-time-noite";
+import { SquareUserRound } from "lucide-react";
+import { Button } from "./components/ui/button";
 
 export function App() {
   return (
@@ -32,6 +34,22 @@ export function App() {
                 <CardTimeTarde />
                 <CardTimeNoite />
               </span>
+              <form className="space-y-10" action="">
+                <div className="space-y-2">
+                  <h3 className="font-bold text-gray-200">Cliente</h3>
+                  <span className="border border-gray-500 w-full flex rounded-md px-3 py-3 text-gray-200 space-x-2">
+                    <SquareUserRound className="text-[#B8952E]" />
+                    <input
+                      className="flex-1  outline-none bg-transparent"
+                      placeholder="Helena Souza"
+                      type="text"
+                    />
+                  </span>
+                </div>
+                <Button className="px-4 hover:bg-[#DBC170] disabled:bg-[#846F2E] rounded-md w-full h-12 text-gray-900 font-bold bg-[#B8952E]">
+                  Agendar
+                </Button>
+              </form>
             </div>
           </div>
         </div>
