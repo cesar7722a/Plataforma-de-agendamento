@@ -1,6 +1,7 @@
 import { DatePickerDemo } from "./components/date-picker-demo";
 import { CardTimeManha } from "./components/card-time-manha";
 import { CardTimeTarde } from "./components/card-time-tarde";
+import { CardTimeNoite } from "./components/card-time-noite";
 
 export function App() {
   return (
@@ -29,6 +30,7 @@ export function App() {
                 <h3 className="font-bold text-gray-200">Horários</h3>
                 <CardTimeManha />
                 <CardTimeTarde />
+                <CardTimeNoite />
               </span>
             </div>
           </div>
