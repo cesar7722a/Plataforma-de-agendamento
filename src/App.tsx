@@ -4,6 +4,13 @@ import { CardTimeTarde } from "./components/card-time-tarde";
 import { CardTimeNoite } from "./components/card-time-noite";
 import { SquareUserRound } from "lucide-react";
 import { Button } from "./components/ui/button";
+import {
+  Select,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "./components/ui/select";
+import { SelectContent } from "@radix-ui/react-select";
 
 export function App() {
   return (
@@ -54,7 +61,24 @@ export function App() {
           </div>
         </div>
       </div>
-      <div></div>
+      <div className="py-20 px-28 space-y-2">
+        <div>
+          <span>
+            <h1>Sua agenda</h1>
+            <h2>Consulte os seus cortes de cabelo agendados por dia</h2>
+          </span>
+          <Select>
+            <SelectTrigger className="w-[180px]">
+              <SelectValue placeholder="Theme" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="light">Light</SelectItem>
+              <SelectItem value="dark">Dark</SelectItem>
+              <SelectItem value="system">System</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+      </div>
     </div>
   );
 }

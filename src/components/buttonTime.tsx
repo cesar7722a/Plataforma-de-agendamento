@@ -17,7 +17,7 @@ export function ButtonTime({
     <Button
       key={key}
       onClick={handleClick}
-      className="px-5 py-2.5 bg-gray-600 border text-[#B8952E] border-[#B8952E] rounded-md hover:cursor-pointer  hover:bg-gray-500"
+      className="px-5 py-2.5 disabled:bg-transparent bg-gray-600 border text-[#B8952E] border-[#B8952E] rounded-md hover:cursor-pointer  hover:bg-gray-500"
     >
       {children}
     </Button>
@@ -25,7 +25,7 @@ export function ButtonTime({
     <Button
       key={key}
       onClick={handleClick}
-      className="px-5 py-2.5 bg-gray-600 border text-gray-200 border-gray-500 rounded-md hover:cursor-pointer  hover:bg-gray-500"
+      className="px-5 py-2.5 disabled:bg-transparent bg-gray-600 border text-gray-200 border-gray-500 rounded-md hover:cursor-pointer  hover:bg-gray-500"
     >
       {children}
     </Button>
