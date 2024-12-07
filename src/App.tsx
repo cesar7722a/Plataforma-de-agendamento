@@ -2,7 +2,7 @@ import { DatePickerDemo } from "./components/date-picker-demo";
 import { CardTimeManha } from "./components/card-time-manha";
 import { CardTimeTarde } from "./components/card-time-tarde";
 import { CardTimeNoite } from "./components/card-time-noite";
-import { CalendarDays, CloudSun, SquareUserRound } from "lucide-react";
+import { CalendarDays, SquareUserRound } from "lucide-react";
 import { Button } from "./components/ui/button";
 import {
   Select,
@@ -11,6 +11,9 @@ import {
   SelectValue,
 } from "./components/ui/select";
 import { SelectContent } from "@radix-ui/react-select";
+import { CardAgendaDate } from "./components/card-agenda-date";
+import { CardAgendaDateTarde } from "./components/card-agenda-date-tarde";
+import { CardAgendaDateNoite } from "./components/card-agenda-date-noite";
 
 export function App() {
   return (
@@ -82,25 +85,9 @@ export function App() {
           </Select>
         </div>
         <div className="space-y-3 text-gray-300 text-sm">
-          <div className="rounded border border-gray-600">
-            <div className="flex justify-between px-5 py-3 items-center border border-b-gray-600 border-t-0 border-r-0 border-l-0">
-              <span className="space-x-2 flex items-center">
-                <CloudSun className="size-5 text-[#B8952E]" />
-                <h4>Manhã</h4>
-              </span>
-              <span>9h-12h</span>
-            </div>
-            <ul className="p-5">
-              <li className="py-1 space-x-6 text-gray-200 flex">
-                <span>11:00</span>
-                <h4>Ryan Dorwart</h4>
-              </li>
-              <li className="py-1 space-x-6 text-gray-200 flex">
-                <span>11:00</span>
-                <h4>Ryan Dorwart</h4>
-              </li>
-            </ul>
-          </div>
+          <CardAgendaDate />
+          <CardAgendaDateTarde />
+          <CardAgendaDateNoite />
         </div>
       </div>
     </div>
