@@ -1,4 +1,5 @@
 import { MoonStar } from "lucide-react";
+import { ItemList } from "./item-list";
 
 export function CardAgendaDateNoite() {
   return (
@@ -11,14 +12,8 @@ export function CardAgendaDateNoite() {
         <span>19h-21h</span>
       </div>
       <ul className="p-5">
-        <li className="py-1 space-x-6 text-gray-200 flex">
-          <span>19:00</span>
-          <h4>Ryan Dorwart</h4>
-        </li>
-        <li className="py-1 space-x-6 text-gray-200 flex">
-          <span>20:00</span>
-          <h4>Ryan Dorwart</h4>
-        </li>
+        <ItemList nameClient="Ryan Dorwart" time="19:00" />
+        <ItemList nameClient="Ryan Dorwart" time="20:00" />
       </ul>
     </div>
   );

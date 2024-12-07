@@ -1,4 +1,5 @@
 import { Haze } from "lucide-react";
+import { ItemList } from "./item-list";
 
 export function CardAgendaDate() {
   return (
@@ -11,14 +12,8 @@ export function CardAgendaDate() {
         <span>9h-12h</span>
       </div>
       <ul className="p-5">
-        <li className="py-1 space-x-6 text-gray-200 flex">
-          <span>11:00</span>
-          <h4>Ryan Dorwart</h4>
-        </li>
-        <li className="py-1 space-x-6 text-gray-200 flex">
-          <span>11:00</span>
-          <h4>Ryan Dorwart</h4>
-        </li>
+        <ItemList nameClient="Ryan Dorwart" time="11:00" />
+        <ItemList nameClient="Ryan Dorwart" time="12:00" />
       </ul>
     </div>
   );

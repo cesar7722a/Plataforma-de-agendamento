@@ -1,4 +1,5 @@
 import { CloudSun } from "lucide-react";
+import { ItemList } from "./item-list";
 
 export function CardAgendaDateTarde() {
   return (
@@ -11,18 +12,10 @@ export function CardAgendaDateTarde() {
         <span>13h-18h</span>
       </div>
       <ul className="p-5">
-        <li className="py-1 space-x-6 text-gray-200 flex">
-          <span>13:00</span>
-          <h4>Ryan Dorwart</h4>
-        </li>
-        <li className="py-1 space-x-6 text-gray-200 flex">
-          <span>14:00</span>
-          <h4>Ryan Dorwart</h4>
-        </li>
-        <li className="py-1 space-x-6 text-gray-200 flex">
-          <span>15:00</span>
-          <h4>Ryan Dorwart</h4>
-        </li>
+        <ItemList nameClient="Ryan Dorwart" time="13:00" />
+        <ItemList nameClient="Ryan Dorwart" time="14:00" />
+        <ItemList nameClient="Ryan Dorwart" time="15:00" />
+        <ItemList nameClient="Ryan Dorwart" time="16:00" />
       </ul>
     </div>
   );
